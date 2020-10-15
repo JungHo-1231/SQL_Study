@@ -48,7 +48,7 @@
 # SELECT title, author_lname FROM books WHERE author_lname = 'eGGers';
 
 
-# 3. Less Than
+# 4. Less Than
 
 # SELECT title, released_year FROM books where released_year < 2000 ORDER BY released_year;
 # SELECT title, released_year FROM books where released_year <=2000 ORDER BY released_year;
@@ -69,7 +69,7 @@
 # -- true
 
 
-# 4. Logical AND
+# 5. Logical AND
 
 # SELECT title, author_lname, released_year FROM books WHERE author_lname = 'Eggers';
 # SELECT title, author_lname, released_year FROM books WHERE released_year > 2010;
@@ -92,7 +92,7 @@
 
 # 참고로 &&는 더 이상 지원하지 않을 예정임. and를 쓰는 것이 바람직하겠다.
 
-# 5. Logical Or
+# 6. Logical Or
 
 # SELECT title, author_lname, released_year FROM books WHERE author_lname = 'Eggers' || released_year > 2010;
 
@@ -110,7 +110,7 @@
 # || 대신 or 사용
 
 
-# 6. Between
+# 7. Between
 
 # SELECT * FROM books WHERE released_year >= 2004 && released_year <= 2015;
 # SELECT * FROM books where released_year BETWEEN 2004 AND 2015;
@@ -130,7 +130,7 @@
 
 
 
-# 7 In and Not In
+# 8 In and Not In
 
 # SELECT title, author_lname FROM books WHERE author_lname IN ('Carver', 'Lahiri', 'Smith');
 # SELECT title, released_year FROM books WHERE released_year IN (2017, 1985);
@@ -180,10 +180,7 @@
 
 
 
-#  8 CASE STATEMENT
-
-
-
+#  9 CASE STATEMENT
 
 # SELECT title, released_year,
 #        CASE 
