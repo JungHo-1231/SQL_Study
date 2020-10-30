@@ -5,7 +5,7 @@ const connection = mysql.createConnection({
 	host     : 'localhost',
 	user     : 'root',
 	database : 'join_us',
-	password : 'pw123'
+	password : '***'
 });
 
 // let q = 'SELECT * FROM users';
